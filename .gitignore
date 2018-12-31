@@ -1,0 +1,15 @@
+node_modules/
+.rpt2_cache/
+*.tgz
+yarn.lock
+yarn-error.log
+package-lock.json
+coverage/
+umd/
+lib/
+src/*.js
+src/*.map
+src/*.d.ts
+test/*.js
+test/*.map
+test/*.d.ts

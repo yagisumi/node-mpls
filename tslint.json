@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "prettier": true,
+    "semicolon": [true, "never"],
+    "indent": [true, "spaces", 2]
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
