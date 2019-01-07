@@ -12,7 +12,7 @@
     "test": "jest",
     "doc": "typedoc --json ./docs/typedoc.json --tsconfig ./src/tsconfig.json ./src",
     "build": "run-s clean build:*",
-    "clean": "rimraf lib coverage umd {src,test}/**/*.{js,mjs,map,d.ts} *.tgz .rpt2_cache",
+    "clean": "rimraf lib coverage umd {src,test}/**/*.{d.ts,js,mjs,map} *.tgz .rpt2_cache",
     "build:cjs": "rollup -c -f cjs -o ./lib/mpls.js",
     "build:mjs": "rollup -c -f es -o ./lib/mpls.mjs",
     "build:umd": "rollup -c rollup.config.umd.js",
@@ -46,5 +46,9 @@
     "tslint-plugin-prettier": "^2.0.1",
     "typedoc": "^0.13.0",
     "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@yagisumi/simple-buffer-reader": "^1.0.2",
+    "extensible-custom-error": "^0.0.6"
   }
 }

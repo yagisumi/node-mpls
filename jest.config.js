@@ -23,4 +23,9 @@ module.exports = {
     '/node_modules/',
     '!*.d.ts',
   ],
+  globals: {
+    'ts-jest': {
+      tsConfig: './test/tsconfig.json',
+    }
+  },
 };
