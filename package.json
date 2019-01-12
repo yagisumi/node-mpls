@@ -1,6 +1,6 @@
 {
   "name": "@yagisumi/mpls",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dump blu-ray mpls to extract chapters.",
   "keywords": [],
   "main": "lib/mpls",
