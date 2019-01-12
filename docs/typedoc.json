@@ -1,0 +1,2480 @@
+{
+	"id": 0,
+	"name": "@yagisumi/mpls",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 25,
+			"name": "mpls",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {},
+			"signatures": [
+				{
+					"id": 124,
+					"name": "mpls",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {},
+					"parameters": [
+						{
+							"id": 125,
+							"name": "buf",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "\n"
+							},
+							"type": {
+								"type": "reference",
+								"name": "ArrayBuffer"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "MPLS",
+						"id": 26
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 36,
+					"name": "AppInfoPlayList",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 40,
+							"name": "UO_mask_table",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 21,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ArrayBuffer"
+							}
+						},
+						{
+							"id": 42,
+							"name": "audio_mix_app_flag",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 23,
+									"character": 22
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 37,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 18,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 43,
+							"name": "lossless_may_bypass_mixer_flag",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 24,
+									"character": 34
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 39,
+							"name": "playback_count",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 20,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 38,
+							"name": "playlist_playback_type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 19,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 41,
+							"name": "playlist_random_access_flag",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 22,
+									"character": 31
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								40,
+								42,
+								37,
+								43,
+								39,
+								38,
+								41
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 17,
+							"character": 34
+						}
+					]
+				},
+				{
+					"id": 26,
+					"name": "MPLS",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 27,
+							"name": "_buffer_length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 6,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 33,
+							"name": "app_info_play_list",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 12,
+									"character": 22
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AppInfoPlayList",
+								"id": 36
+							}
+						},
+						{
+							"id": 32,
+							"name": "extension_data_start_address",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 11,
+									"character": 32
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 34,
+							"name": "playlist",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 13,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PlayList",
+								"id": 44
+							}
+						},
+						{
+							"id": 35,
+							"name": "playlist_mark",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 14,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PlayListMark",
+								"id": 112
+							}
+						},
+						{
+							"id": 31,
+							"name": "playlist_mark_start_address",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 10,
+									"character": 31
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 30,
+							"name": "playlist_start_address",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 9,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 28,
+							"name": "type_indicator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 7,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 29,
+							"name": "type_indicator2",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 8,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								27,
+								33,
+								32,
+								34,
+								35,
+								31,
+								30,
+								28,
+								29
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 5,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 116,
+					"name": "Mark",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 123,
+							"name": "_abs_start_hhmmss",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 126,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 122,
+							"name": "_abs_start_msec",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 125,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 121,
+							"name": "duration",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 124,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 120,
+							"name": "entry_es_pid",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 123,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 117,
+							"name": "mark_type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 120,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 118,
+							"name": "play_item_ref",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 121,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 119,
+							"name": "time",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 122,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								123,
+								122,
+								121,
+								120,
+								117,
+								118,
+								119
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 119,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 78,
+					"name": "MultiAngleItem",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 80,
+							"name": "clip_codec_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 71,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 79,
+							"name": "clip_file",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 70,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 81,
+							"name": "stc_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 72,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								80,
+								79,
+								81
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 69,
+							"character": 33
+						}
+					]
+				},
+				{
+					"id": 50,
+					"name": "PlayItem",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 59,
+							"name": "UO_mask_table",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 44,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ArrayBuffer"
+							}
+						},
+						{
+							"id": 68,
+							"name": "_abs_start_time",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 53,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 70,
+							"name": "_play_time_hhmmss",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 55,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 69,
+							"name": "_play_time_msec",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 54,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 52,
+							"name": "clip_file",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 37,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 53,
+							"name": "codec_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 38,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 55,
+							"name": "connection_condition",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 40,
+									"character": 24
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 57,
+							"name": "in_time",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 42,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 64,
+							"name": "is_different_audios",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 49,
+									"character": 23
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 54,
+							"name": "is_multi_angle",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 39,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 65,
+							"name": "is_seamless_angle_change",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 50,
+									"character": 28
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 51,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 36,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 66,
+							"name": "multi_angle_items",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 51,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "MultiAngleItem",
+										"id": 78
+									}
+								]
+							}
+						},
+						{
+							"id": 63,
+							"name": "num_angles",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 48,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 58,
+							"name": "out_time",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 43,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 60,
+							"name": "random_access_flag",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 45,
+									"character": 22
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 56,
+							"name": "stc_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 41,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 61,
+							"name": "still_mode",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 46,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 62,
+							"name": "still_time",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 47,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 67,
+							"name": "stn",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 52,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "PlaylistSTN",
+								"id": 82
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								59,
+								68,
+								70,
+								69,
+								52,
+								53,
+								55,
+								57,
+								64,
+								54,
+								65,
+								51,
+								66,
+								63,
+								58,
+								60,
+								56,
+								61,
+								62,
+								67
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 35,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 44,
+					"name": "PlayList",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 45,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 28,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 46,
+							"name": "number_of_playitems",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 29,
+									"character": 23
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 47,
+							"name": "number_of_subpaths",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 30,
+									"character": 22
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 48,
+							"name": "playitems",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 31,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "PlayItem",
+										"id": 50
+									}
+								]
+							}
+						},
+						{
+							"id": 49,
+							"name": "subpaths",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 32,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Subpath",
+										"id": 71
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								45,
+								46,
+								47,
+								48,
+								49
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 27,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 112,
+					"name": "PlayListMark",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 115,
+							"name": "entries",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 116,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Mark",
+										"id": 116
+									}
+								]
+							}
+						},
+						{
+							"id": 113,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 114,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 114,
+							"name": "number_marks",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 115,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								115,
+								113,
+								114
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 113,
+							"character": 31
+						}
+					]
+				},
+				{
+					"id": 82,
+					"name": "PlaylistSTN",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 83,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 76,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 90,
+							"name": "num_PIP_PG",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 83,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 87,
+							"name": "num_ig",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 80,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 86,
+							"name": "num_pg",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 79,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 85,
+							"name": "num_primary_audio",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 78,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 84,
+							"name": "num_primary_video",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 77,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 88,
+							"name": "num_secondary_audio",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 81,
+									"character": 23
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 89,
+							"name": "num_secondary_video",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 82,
+									"character": 23
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 91,
+							"name": "streams",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 84,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Stream",
+										"id": 92
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								83,
+								90,
+								87,
+								86,
+								85,
+								84,
+								88,
+								89,
+								91
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 75,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 92,
+					"name": "Stream",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 98,
+							"name": "attributes",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 93,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "StreamAttributes",
+								"id": 99
+							}
+						},
+						{
+							"id": 93,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 88,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 97,
+							"name": "pid",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 92,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 94,
+							"name": "stream_type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 89,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 96,
+							"name": "subclip_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 91,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 95,
+							"name": "subpath_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 90,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								98,
+								93,
+								97,
+								94,
+								96,
+								95
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 87,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 99,
+					"name": "StreamAttributes",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 102,
+							"name": "_coding_type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 99,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 104,
+							"name": "_format",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 101,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 106,
+							"name": "_rate",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 103,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 109,
+							"name": "_type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 106,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "stringLiteral",
+										"value": "video"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "audio"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "graphics"
+									}
+								]
+							}
+						},
+						{
+							"id": 108,
+							"name": "char_code",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 105,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 101,
+							"name": "coding_type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 98,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 103,
+							"name": "format",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 100,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 107,
+							"name": "lang_code",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 104,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 100,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 97,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 105,
+							"name": "rate",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 102,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								102,
+								104,
+								106,
+								109,
+								108,
+								101,
+								103,
+								107,
+								100,
+								105
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 96,
+							"character": 35
+						}
+					]
+				},
+				{
+					"id": 110,
+					"name": "SubPath",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 111,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 110,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								111
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 109,
+							"character": 26
+						}
+					]
+				},
+				{
+					"id": 74,
+					"name": "SubPlayItem",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 76,
+							"name": "clip_file",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 65,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 77,
+							"name": "codec_id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 66,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 75,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 64,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								76,
+								77,
+								75
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 63,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 71,
+					"name": "Subpath",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 72,
+							"name": "length",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 59,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 73,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "mpls.ts",
+									"line": 60,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								72,
+								73
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "mpls.ts",
+							"line": 58,
+							"character": 26
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						36,
+						26,
+						116,
+						78,
+						50,
+						44,
+						112,
+						82,
+						92,
+						99,
+						110,
+						74,
+						71
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "mpls.ts",
+					"line": 4,
+					"character": 21
+				},
+				{
+					"fileName": "mpls.ts",
+					"line": 134,
+					"character": 20
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 2,
+			"children": [
+				25
+			]
+		}
+	]
+}
