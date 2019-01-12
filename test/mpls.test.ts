@@ -2,7 +2,6 @@ import fs from "fs"
 import path from "path"
 import * as impl from "../src/mpls_impl"
 import { mpls } from "../src/mpls"
-import util from "util"
 
 describe("mpls_impl", () => {
   test("hhmmssmsec()", () => {
@@ -20,7 +19,7 @@ describe("mpls_impl", () => {
   }
 
   test("mpls", () => {
-    const arybuf = load_arybuf("PLAYLIST/c0.mpls")
+    const arybuf = load_arybuf("PLAYLIST/a0.mpls")
 
     expect(() => impl.mplsImpl(arybuf)).not.toThrowError()
     // const r = impl.mplsImpl(arybuf)
