@@ -3,7 +3,7 @@ import { mplsImpl } from "./mpls_impl"
 // not use `export declare namespace` for typedoc
 export namespace mpls {
   export interface MPLS {
-    _size_of_file: number
+    _buffer_length: number
     type_indicator: string
     type_indicator2: string
     playlist_start_address: number
@@ -103,6 +103,7 @@ export namespace mpls {
     _rate?: string
     lang_code?: string
     char_code?: number
+    _type?: "video" | "audio" | "graphics"
   }
 
   export interface SubPath {

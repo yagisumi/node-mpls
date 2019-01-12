@@ -48,11 +48,11 @@ const AudioFormatMap: { [type: number]: string } = {
 }
 
 const AudioRateMap: { [type: number]: string } = {
-  1: "48 Khz",
-  4: "96 Khz",
-  5: "192 Khz",
-  12: "48/192 Khz",
-  14: "48/96 Khz",
+  1: "48Khz",
+  4: "96Khz",
+  5: "192Khz",
+  12: "48/192Khz",
+  14: "48/96Khz",
 }
 
 class MplsError extends ExtensibleCustomError {}
@@ -67,7 +67,7 @@ export function mplsImpl(buf: ArrayBuffer) {
 
   try {
     const mpls: mpls.MPLS = {
-      _size_of_file: buf.byteLength,
+      _buffer_length: buf.byteLength,
       type_indicator: r.readString(4),
       type_indicator2: r.readString(4),
       playlist_start_address: r.readUint32BE(),
@@ -271,6 +271,7 @@ export function parse_stream(r: SimpleBufferReader): mpls.Stream {
         attr.rate = info & 0b1111
         attr._format = VideoFormatMap[attr.format]
         attr._rate = VideoRateMap[attr.rate]
+        attr._type = "video"
         break
       case 0x03:
       case 0x04:
@@ -287,14 +288,17 @@ export function parse_stream(r: SimpleBufferReader): mpls.Stream {
         attr._format = AudioFormatMap[attr.format]
         attr._rate = AudioRateMap[attr.rate]
         attr.lang_code = r.readString(3)
+        attr._type = "audio"
         break
       case 0x90:
       case 0x91:
         attr.lang_code = r.readString(3)
+        attr._type = "graphics"
         break
       case 0x92:
         attr.char_code = r.readUint8()
         attr.lang_code = r.readString(3)
+        attr._type = "graphics"
         break
       default:
         break
