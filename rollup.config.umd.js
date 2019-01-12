@@ -12,6 +12,7 @@ export default {
     extend: true,
     sourcemap: true,
     sourcemapExcludeSources: true,
+    // compact: true,
   },
 
   plugins: [
@@ -27,6 +28,9 @@ export default {
         },
       },
     }),
-    terser(),
+    terser({
+      keep_classnames: true,
+      keep_fnames: true,
+    }),
   ],
 }
