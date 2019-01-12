@@ -11,6 +11,10 @@ Dump blu-ray mpls to extract chapters.
 $ npm i @yagisumi/mpls
 ```
 
+## Demo
+
+[.mpls to chapter](https://mpls-to-chapter.netlify.com/)
+
 ## Usage
 
 - javascript
